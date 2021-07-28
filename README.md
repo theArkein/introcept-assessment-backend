@@ -27,7 +27,7 @@ nest generate resource src/modules/client
 
 5. Integrate the exported helper module functions (save, read) in *ClientService* class.
 6. Validate incoming client data for create client request in *create-client.dto.ts* inside *src/modules/client/dto*. **[class-validator](https://www.npmjs.com/package/class-validator)** dependency is used to validate incoming data.
-7. Deploy the app in [Heroku Server](https://dashboard.heroku.com/) [See guide](https://dev.to/rosyshrestha/deploy-nestjs-typescript-app-to-heroku-27e)
+7. Deploy the app in [Heroku Server](https://dashboard.heroku.com/). [See guide](https://dev.to/rosyshrestha/deploy-nestjs-typescript-app-to-heroku-27e)
 
 ### Packgaes used
 1. **[csvjson](https://www.npmjs.com/package/csvjson)**: In this application this dependency is used to convert csv values into json format.
