@@ -11,12 +11,12 @@ export class ClientService {
     let result = save(storagePath, createClientDto);
     if (result['error']) {
       return {
-        success: "false",
+        success: false,
         message: "Couldn't save client"
       }
     } else {
       return {
-        success: "true",
+        success: true,
         data: result['data']
       }
     }
@@ -26,12 +26,12 @@ export class ClientService {
     let result = read(storagePath);
     if (result['error']) {
       return {
-        success: "false",
+        success: false,
         message: "Couldn't save client"
       }
     } else {
       return {
-        success: "true",
+        success: true,
         data: result['data']
       }
     }
@@ -39,21 +39,21 @@ export class ClientService {
 
   findOne(id: number) {
     return {
-      success: "false",
+      success: false,
       message: "This feature is not available yet"
     };
   }
 
   update(id: number, updateClientDto: UpdateClientDto) {
     return {
-      success: "false",
+      success: false,
       message: "This feature is not available yet"
     };
   }
 
   remove(id: number) {
     return {
-      success: "false",
+      success: false,
       message: "This feature is not available yet"
     };
   }

@@ -15,8 +15,12 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+    it('should return object', () => {
+      expect(appController.getHello()).toBe({
+        title: 'Introcept',
+        description: "Assessment for full stack web developer job",
+        modules: ['clients']
+      });
     });
   });
 });
